@@ -5,7 +5,7 @@ $(document).ready(() => {
       
      $('#Loader').hide();
      $("#Header,#Main,#footer").show()
-  }, 12000);
+  }, 10000);
   
   $(document).scroll((() => {
     if ($(document).scrollTop() > 140) {
@@ -66,13 +66,8 @@ $(document).ready(() => {
       $(`#counter-${stringValue}`).text(likeCounter++)
     }
 
-
-
-
-  })
-
-
-  $("#Subscribe_button").click((e) => {
+})
+ $("#Subscribe_button").click((e) => {
     e.preventDefault();
     var email = $("#icon_prefix").val();
     $("#icon_prefix,#Subscribe_button").hide();
@@ -80,15 +75,16 @@ $(document).ready(() => {
     $("#Success-Message").removeClass("hidden")
   })
   $("#Category-Open-Btn").bind("click", () => {
-    $("#header-video,#Main,#footer").addClass("hidden");
+    $("#header-video,#Main,#footer").addClass(" hidden");
     $("#SectionLearnMore").removeClass("hidden");
-
-  })
+    $("#SectionLearnMore").addClass("animated fadeInLeftBig")
+    
+})
   
   $("#closeContainer").bind("click", () => {
-    $("#header-video,#Main,#footer").removeClass("hidden");
     $("#SectionLearnMore").addClass("hidden");
+    $("#header-video,#Main,#footer").removeClass("hidden");
+    $("#header-video,#Main,#footer").addClass("animated fadeInRightBig ");
+  
   })
-
-
 })

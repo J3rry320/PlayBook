@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
 inDuration:200,
 outDuration:150
   });
+
+    var Modalinstances = M.Modal.init(document.querySelectorAll('.modal'), {
+
+    });
+   
 });
 
 
