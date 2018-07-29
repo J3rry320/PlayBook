@@ -23,7 +23,7 @@ $(document).ready(() => {
       var id = e.target.id;
       $("#videoSource").attr("src", id);
       $("#videoPlayer")[0].load()
-      $("#videoPlayer").trigger("play");
+
       //$(this).attr("href") did not work and i Wasted time on it but worked on this workaround
     }
 
@@ -40,7 +40,10 @@ $(document).ready(() => {
     $("#videoPlayer")[0].load()
   })*/
   $(".scrollSome").on("click",()=>{
-    $('html, body').animate({scrollTop: '+=-900px'}, 250);
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#videoPlayer").offset().top
+  }, 250);
+
   })
 
   $(".like-counter").click((e) => {
