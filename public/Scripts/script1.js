@@ -72,7 +72,9 @@ $(document).ready(() => {
     var email = $("#icon_prefix").val();
     $("#icon_prefix,#Subscribe_button").hide();
     $("#Intro-Text").text(`Hey ${email}`)
-    $("#Success-Message").removeClass("hidden")
+    $("#Success-Message").removeClass("hidden");
+    $("#Success-Message").addClass("animated fadeInLeftBig");
+
   })
   $("#Category-Open-Btn").bind("click", () => {
     $("#header-video,#Main,#footer").addClass(" hidden");
