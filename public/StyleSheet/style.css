@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+body{
+  height:100%;
+  font-family: 'Josefin Sans', sans-serif;;
+    
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+  -ms-font-smoothing: antialiased!important
+}
+
+
+
+.bold-text{
+  text-transform: uppercase;
+  font-weight: bolder;
+  
+
+}
+
+.text{
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text h2{
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 300;
+}
+.material-icons.mb-48{
+  font-size:48px;
+}
+.margin-bit{
+  margin-top:10%;
+}
+.text p{
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 150;
+}
+
+.first-bg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('https://images.pexels.com/photos/7424/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+.first-bg:before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  transform-origin: right;
+  transform: skewY(5deg) ;
+}
+.second-bg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('https://images.pexels.com/photos/7427/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+.second-bg:before{
+  content: '';
+  position: absolute;
+  bottom: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  transform-origin: right;
+  transform: skewY(5deg);
+}
+.second-bg:after{
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  transform-origin: right;
+  transform: skewY(-8deg);
+}
+.third-bg:after{
+  content: '';
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  transform-origin: right;
+  transform: skewY(4deg);
+}
+
+.third-bg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('https://images.pexels.com/photos/813940/pexels-photo-813940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+.third-bg:before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  transform-origin: right;
+  transform: skewY(5deg) ;
+}
+#video_player { 
+  display: table; line-height: 0;
+  font-size: 0; background: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#video_container { 
+  position: relative;
+}
+#video_player div, #video_player figcaption { 
+  display: table-cell;
+  vertical-align: top; 
+}
+#video_container video { 
+  position: absolute; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#video_player figcaption { width: 25%; }
+#video_player figcaption a { display: block; }
+#video_player figcaption a { 
+  opacity: .5;
+  transition: 0.5s opacity; 
+
+}
+
+#video_player figcaption a img, figure video { 
+  width: 100%; height: auto; 
+}
+#video_player figcaption a, #video_player figcaption a:hover, #video_player figcaption a:focus { opacity: 1; }
+@media (max-width: 700px) {
+  #video_player video, #video_player figcaption { 
+    display: table-row; 
+  }
+#video_container { padding-top: 56.25%; }
+#video_player figcaption a { 
+  display: inline-block; width: 33.33%; 
+}
+}
+.my-container {
+  position: relative;
+  width: 100%;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color:#000;
+}
+.my-container:hover .overlay {
+  opacity: 1;
+}
+.icon {
+  color: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playbook Tv</title>
+  <meta name="description" content="A Basic web design for video playback service">
+  <meta name="author" content="Jerry Satpathy">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Added the single rule CSS here for faster loading-->
+  <style>
+    .parallax video{
+      background-coor:#000;
+    }
+    .parallax-container {
+  height: 700px;
+}
+
+    .hidden{
+  display: none;
+
+}
+.big-text{
+  font-size:40px;
+}
+.row .col.s3{
+  padding:0
+}
+    .padding-top{
+  padding-top:10%;
+}
+  .input-group {
+  display: table;
+}
+
+.input-group input, .suffix {
+  display: table-cell;
+}
+
+.suffix {
+width:1.4%;
+}
+.full_height{
+  height:100vh;
+}
+.padding-top-more{
+  padding: 25%;
+}
+</style>
+  <link rel="stylesheet" href="./StyleSheet/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  
+
+</head>
+
+<body class="">
+    <section class="black hidden full_height padding-top-more" id="Loader">
+      <center>
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </section>
+  <header id="Header">
+    
+    <div class="navbar-fixed hidden" id="navigation">
+    <nav class="black lighten-4 z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Playbook</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down" id="Navbar">
+          <li >
+            <a   href="#header-video"> Home</a>
+          </li>
+          <li >
+            <a  href="#aboutUs">About Us</a>
+          </li>
+          <li >
+            <a href="#featured-videos">Featured Videos</a>
+          </li>
+          <li>
+            <a href="#comingSoon">Coming Soon</a>
+          </li>
+          <li>
+              <a href="#footer">Subscribe</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li >
+            <a   href="#header-video"> Home</a>
+          </li>
+          <li >
+            <a  href="#aboutUs">About Us</a>
+          </li>
+          <li >
+            <a href="#featured-videos">Featured Videos</a>
+          </li>
+          <li>
+            <a href="#comingSoon">Coming Soon</a>
+          </li>
+          <li>
+              <a href="#footer">Subscribe</a>
+            </li>
+    </ul>
+  </div>
+    <section id="header-video">
+
+      <div class="parallax-container">
+        <div class="parallax">
+          <video poster="https://images.pexels.com/photos/427898/pexels-photo-427898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  autoplay muted loop>
+            <source src="./Media/header.mp4"> </video>
+        </div>
+        <div class=" flow-text">
+          <div class="row">
+            <div class="col s12 transparent">
+              <div class="text">
+                <h2 class=" padding-top yellow-text">Playbook</h2>
+                <p class=" white-text bold-text ">Voluptate labore pariatur nulla non occaecat enim aliqua adipisicing proident. Consectetur magna id veniam
+                .
+                </p>
+                <button class="btn btn-large black white-text" id="Category-Open-Btn">Learn More</button>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <section class="black hidden" id="SectionLearnMore">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="col s12">
+              <div class="text">
+                <h2 class="white-text center-align">Categories</h2>
+              </div>
+              <p class="white-text center-align">
+                Check Out Our Categories We have each for everyone
+              </p>
+              <button id="closeContainer" class="btn btn-floating btn-large black black-text right">
+                <i class="material-icons">
+                  close
+                </i>
+
+
+              </button>
+            </div>
+
+            <div class="row">
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons mb-48 right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/156731/pexels-photo-156731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Lorem Ispum
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a href="#">Find More Like This</a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main id="Main">
+
+
+    <section >
+
+      <div class="first-bg">
+
+      </div>
+      <div class="text" id="aboutUs" >
+        <h2>About Us</h2>
+        <p>Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
+          aliqua. Laborum dolore pariatur in esse adipisicing reprehenderit fugiat ut labore commodo non minim. Excepteur
+          minim ea Lorem ex.</p>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col m4 s12">
+            <div class="card">
+              <center>
+
+                <i class="material-icons margin-bit mb-48">
+                  mood
+                </i>
+
+              </center>
+              <div class="card-content">
+                <h4 class="black-text">
+                  Lorem Ipsum
+                </h4>
+                <p class="left-align"> Exercitation elit culpa aute occaecat sit dolore.Sunt nostrud magna nostrud ut duis esse incididunt officia
+                  deserunt cillum consectetur dolore anim.</p>
+              </div>
+              <div class="card-action ">
+                <a href="#" class="black-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card">
+              <center>
+
+                <i class="material-icons margin-bit mb-48">
+                  location_city
+                </i>
+
+              </center>
+              <div class="card-content">
+                <h4 class="black-text">
+                  Lorem Ipsum
+                </h4>
+                <p class="left-align"> Cupidatat sit exercitation commodo veniam laboris officia ullamco do.Laborum proident ipsum ut voluptate
+                  cupidatat magna voluptate cillum.</p>
+              </div>
+              <div class="card-action ">
+                <a href="#" class="black-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12">
+            <div class="card">
+              <center>
+
+                <i class="material-icons margin-bit mb-48">
+                  face
+                </i>
+
+              </center>
+              <div class="card-content">
+                <h4 class="black-text">
+                  Lorem Ipsum
+                </h4>
+                <p class="left-align">Lorem Ipsum Das Nenu Eu ut non et consectetur dolor laborum velit.Nostrud nostrud labore consequat laborum
+                  non nulla pariatur ipsum dolor nostrud velit.</p>
+              </div>
+              <div class="card-action ">
+                <a href="#" class="black-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <section >
+      <div class="second-bg"></div>
+      <div class="text" id="featured-videos">
+        <h2 class="right-align">Featured Videos</h2>
+        <p class="right-align">Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
+          aliqua. </p>
+      </div>
+      <div class="row">
+
+        <div class="">
+          <figure id="video_player">
+            <div id="video_container">
+              <video controls id="videoPlayer" autoplay loop poster="http://thenewcode.com/assets/images/vid-glacier.jpg" playsinline>
+                <source id="videoSource" src="./Media/Video12.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption class="Video">
+              <a href="#!" class="NewVideo">
+                <img id="./Media/Video7.mp4"  src="https://images.pexels.com/photos/1257260/pexels-photo-1257260.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Athabasca Glacier">
+              </a>
+              <a href="#!"  class="NewVideo">
+                <img id="./Media/Video3.mp4"  src="https://images.pexels.com/photos/315499/pexels-photo-315499.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Athabasca Lake">
+              </a>
+              <a href="#!"  class="NewVideo">
+               
+                <img id=" ./Media/Video1.mp4" src="https://images.pexels.com/photos/1168940/pexels-photo-1168940.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Mountain">
+
+              </a>
+
+
+            </figcaption>
+          </figure>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <div class="text">
+                  <h2 class="center-align">Some of our featured collections</h2>
+                </div>
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/1168742/pexels-photo-1168742.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
+                      <i id="./Media/Video13.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+                  </div>
+                  <figcaption>
+
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text like-counter">
+                        <i class="material-icons like-button" id="like-counter6">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-6">234</p>
+                    </div>
+
+
+                  </figcaption>
+                </figure>
+
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/163379/ballet-sneaker-dress-ballet-dancer-163379.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a href="#!" class="icon NewVideo scrollSome" title="User Profile">
+                      <i id="./Media/Video5.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+                  </div>
+                  <figcaption>
+
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text like-counter">
+                        <i class="material-icons like-button" id="like-counter5">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-5">4354</p>
+                    </div>
+
+
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
+                      <i id="./Media/Video4.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+                  </div>
+                  <figcaption>
+
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text like-counter">
+                        <i class="material-icons like-button" id="like-counter4">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-4">4142</p>
+                    </div>
+
+
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/784707/pexels-photo-784707.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
+                      <i id="./Media/Video11.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+                  </div>
+                  <figcaption>
+
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text like-counter">
+                        <i class="material-icons like-button" id="like-counter3">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-3">9192</p>
+                    </div>
+
+
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
+                      <i id="./Media/Video2.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+
+                  </div>
+                  <figcaption>
+
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text scrollSome like-counter">
+                        <i class="material-icons like-button" id="like-counter2">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-2">1222</p>
+                    </div>
+
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col m4 s12">
+                <figure class="my-container hoverable white">
+                  <img src="https://images.pexels.com/photos/264258/pexels-photo-264258.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar" class="responsive-img">
+                  <div class="overlay">
+                    <a  class="icon scrollSome NewVideo" title="User Profile">
+                      <i id="./Media/Video8.mp4" class="material-icons mb-48">
+                        play_circle_filled
+                      </i>
+                    </a>
+                  </div>
+                  <figcaption>
+                    <div class="valign-wrapper right">
+                      <h5 class="left-align">
+                        Heart Warming Dance
+                      </h5>
+                      <a href="#!" class="black-text like-counter">
+                        <i class="material-icons  like-button-1" id="like-counter1">
+                          favorite_border
+                        </i>
+
+                      </a>
+                      <p id="counter-1">129</p>
+                    </div>
+
+
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section >
+      <div class="row">
+        <div class="third-bg"></div>
+        <div class="text" id="comingSoon">
+          <h2 class="left-align">Coming Soon</h2>
+          <p class="left-align">Ad ea consectetur aliquip ex cupidatat commodo.Eu aute eiusmod consectetur elit culpa consequat et nulla mollit
+            consectetur.
+          </p>
+        </div>
+        <div class="col m6 s12">
+          <div class="card  ">
+            <div class="card-image">
+              <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
+
+
+            </div>
+            <div class="card-content">
+              <h4 class="black-text">
+                Lorem Ipsum
+              </h4>
+              <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit. Adipisicing velit irure irure
+                ea est officia.Culpa labore sint elit do deserunt reprehenderit est consequat fugiat proident ea.Minim irure
+                do voluptate amet tempor magna ut qui occaecat elit.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col m6 s12">
+          <div class="row">
+            <div class="col m6 s12">
+              <div class="card  ">
+                <div class="card-image">
+                  <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
+
+
+                </div>
+                <div class="card-content">
+                  <h4 class="black-text">
+                    Lorem Ipsum
+                  </h4>
+                  <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col m6 s12">
+              <div class="card  ">
+                <div class="card-image">
+                  <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
+
+
+                </div>
+                <div class="card-content">
+                  <h4 class="black-text">
+                    Lorem Ipsum
+                  </h4>
+                  <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <div class="card  ">
+                <div class="card-image">
+                  <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
+
+
+                </div>
+                <div class="card-content">
+                  <h4 class="black-text">
+                    Lorem Ipsum
+                  </h4>
+                  <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <div class="card  ">
+                <div class="card-image">
+                  <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
+
+
+                </div>
+                <div class="card-content">
+                  <h4 class="black-text">
+                    Lorem Ipsum
+                  </h4>
+                  <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="black" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col  s12">
+          <center>
+            <div class="text">
+              <br>
+              <h2 class="white-text">The Playbook</h2>
+              <p class="white-text">Duis qui dolore ex veniam occaecat exercitation commodo pariatur aliquip dolor quis nulla irure.Non amet voluptate
+                exercitation reprehenderit consectetur.</p>
+            </div>
+            <div class="hidden" id="Success-Message">
+              <div class="text white-text">
+                <h2 id="Intro-Text"></h2>
+                <p>Thankyou for Subscribing Hope To See You Around</p>
+
+              </div>
+            </div>
+
+            <div class="input-field input-group" >
+              <input id="icon_prefix" type="email" placeholder="Your Email"  class="validate white black-text ">
+
+              <span class="suffix">
+                <a class="btn  waves-effect waves-light black white-text" id="Subscribe_button">
+                  Subscribe
+                </a>
+              </span>
+            </div>
+
+
+
+          </center>
+
+
+
+
+        </div>
+
+
+      </div>
+      <br>
+      <div class="col s12">
+        <center>
+          <h4 class="white-text">Connect With Us in Social Media</h4>
+          <br>
+          <div class="row">
+            <div class="col s3">
+              <a class="white-text big-text" href="#!">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="col s3">
+              <a class="white-text big-text" href="#!">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div class="col s3">
+              <a href="" class="white-text big-text">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <a href="" class="white-text big-text">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+      </div>
+
+      </center>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="footer-copyright">
+      <div class="container">
+        <center class="white-text">
+          © 2018
+          <br>Designed and Developed with
+          <i class="material-icons">favorite</i> By
+          <a class="yellow-text" href="jerrysatpathy.in"> J3</a>
+        </center>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="./Scripts/script1.js"></script>
+  <script src="./Scripts/script2.js"></script>
+</body>
+
+</html>
