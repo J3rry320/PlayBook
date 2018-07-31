@@ -1,14 +1,7 @@
 $(document).ready(() => {
   $("#videoPlayer").trigger("pause")
 
-  var config = {
-    apiKey: "AIzaSyCVwlufUTFJ93ptOc-MCElh94CB-9G9w9c",
-    authDomain: "playbook-41a3a.firebaseapp.com",
-    databaseURL: "https://playbook-41a3a.firebaseio.com",
-    projectId: "playbook-41a3a",
-    storageBucket: "",
-    messagingSenderId: "788381501788"
-  };
+
   firebase.initializeApp(config);
 
   var Modalinstances = M.Modal.init(document.querySelectorAll('.modal'), {
@@ -137,17 +130,27 @@ video.onended = function(e) {
       }
 
     })
+    $("#closeSubscribe").bind("click",()=>{
+      $("#alertMessage").addClass("hide");
+      $("#icon_prefix,#Subscribe_button").show();
+    })
     $("#Subscribe_button").click((e) => {
-      if ($("#icon_prefix").val() === " ") {
+      if ($("#icon_prefix").val() === "") {
         $("#alertMessage").removeClass("hide");
-
+        $("#alertMessage").addClass("animated fadeInRightBig");
+        $("#Success-Message").addClass("hidden");
+        $("#icon_prefix,#Subscribe_button").show();
       }
-      e.preventDefault();
-      var email = $("#icon_prefix").val();
-      $("#icon_prefix,#Subscribe_button").hide();
-      $("#Intro-Text").text(`Hey ${email}`)
-      $("#Success-Message").removeClass("hidden");
-      $("#Success-Message").addClass("animated fadeInLeftBig");
+   
+      else{
+        e.preventDefault();
+        var email = $("#icon_prefix").val();
+        $("#icon_prefix,#Subscribe_button").hide();
+        $("#Intro-Text").text(`Hey ${email}`)
+        $("#Success-Message").removeClass("hidden");
+        $("#Success-Message").addClass("animated fadeInLeftBig");
+      }
+ 
 
     })
     $("#Category-Open-Btn").bind("click", () => {
