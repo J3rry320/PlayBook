@@ -6,17 +6,53 @@ body {
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   ;
-  -webkit-font-smoothing: antialiased!important;
-  -moz-osx-font-smoothing: grayscale!important;
-  -ms-font-smoothing: antialiased!important
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-font-smoothing: antialiased !important
 }
 
 html {
   height: 100%;
 }
 
+.landing-page-image {
+  background-image: url("../Media/landing_page.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page-image-2 {
+  background-image: url("../Media/adidas-ball-field-46798.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page-image-3 {
+  background-image: url("../Media/action-athletes-base-209933.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .section-parallax {
   background-image: url("https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-parallax-2 {
+  background-image: url("https://images.pexels.com/photos/54308/man-fan-person-football-54308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 75vh;
   background-attachment: fixed;
   background-position: center;
@@ -34,6 +70,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   top: 0;
   bottom: 0;
   background-attachment: scroll;
@@ -44,7 +81,6 @@ html {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
   width: auto;
   height: auto;
   top: 50%;
@@ -59,8 +95,16 @@ html {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  z-index: 3;
   background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.Intro_Overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 
@@ -92,14 +136,6 @@ html {
   font-weight: 300;
 }
 
-.material-icons.mb-48 {
-  font-size: 48px;
-}
-
-.margin-bit {
-  margin-top: 10%;
-}
-
 .text p {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -115,11 +151,8 @@ html {
   margin: 0 auto;
 }
 
-#video_container {
-  position: relative;
-}
-
-#video_player div, #video_player figcaption {
+#video_player div,
+#video_player figcaption {
   display: table-cell;
   vertical-align: top;
 }
@@ -132,30 +165,20 @@ html {
   top: 0;
 }
 
-#video_player figcaption {
-  width: 25%;
-}
-
-#video_player figcaption a {
-  display: block;
-}
-
 #video_player figcaption a {
   opacity: .5;
   transition: 0.5s opacity;
 }
 
-#video_player figcaption a img, figure video {
+#video_player figcaption a img,
+figure video {
   width: 100%;
   height: auto;
 }
 
-#video_player figcaption a, #video_player figcaption a:hover, #video_player figcaption a:focus {
-  opacity: 1;
-}
-
 @media (max-width: 700px) {
-  #video_player video, #video_player figcaption {
+  #video_player video,
+  #video_player figcaption {
     display: table-row;
   }
   #video_container {
@@ -179,66 +202,45 @@ html {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .nav-overlay-content {
   position: relative;
-  top: 25%;
+  top: 10%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .nav-overlay a {
-  padding: 8px;
+  padding: 5px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
   display: block;
-  transition: 0.3s
+  transition: 0.5s
 }
 
-.nav-overlay a:hover, .nav-overlay a:focus {
-  color: #f1f1f1;
-}
-
-.nav-overlay .closebtn,.nav-overlay .closebtnModal{
+.nav-overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
 }
-.modal-overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 4;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 1);
-  overflow-x: hidden;
-  transition: 0.8s;
-}
-.modal-overlay-content{
-  position: relative;
 
-  width: 100%;
-  text-align: center;
-
-}
 @media screen and (max-height: 450px) {
-  .nav-overlay a {font-size: 20px}
+  .nav-overlay a {
+    font-size: 20px
+  }
   .nav-overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
-
-
 
 .overlay {
   position: absolute;
@@ -257,8 +259,9 @@ html {
   opacity: 1;
 }
 
-.overlay .play:hover, .overlay .play:focus, .overlay .artist-identy:focus, .overlay .share-icon:focus, .overlay .artist-identy:hover, .overlay .share-icon:hover {
-  color: lightgreen;;
+.social-icon-bar a:hover {
+  background-color: #000;
+  color: #f1f1ff;
 }
 
 .icon {
@@ -270,6 +273,7 @@ html {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .social-icon-bar {
   position: fixed;
   top: 50%;
@@ -277,16 +281,14 @@ html {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: #000;
-  z-index:5
+  z-index: 5
 }
+
 .social-icon-bar a {
   display: block;
   text-align: center;
   padding: 16px;
   transition: all 0.5s ease;
-  color: white;
+  color: rgb(128, 128, 128);
   font-size: 20px;
-}
-.social-icon-bar a:hover {
-  background-color: #000;
 }

@@ -10,51 +10,95 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Added the single rule CSS here for faster loading-->
   <style>
-    .width_for_hr {
-      width: 50%
-    }
+#video_container {
+  position: relative;
+}
 
-    .hidden {
-      display: none;
+.overlay .play:hover,
+.overlay .play:focus,
+.overlay .artist-identy:focus,
+.overlay .share-icon:focus,
+.overlay .artist-identy:hover,
+.overlay .share-icon:hover {
+  color: lightgreen;
+  ;
+}
 
-    }
+.nav-overlay a:hover,
+.nav-overlay a:focus {
+  color: #f1f1f1;
+}
 
-    .big-text {
-      font-size: 40px;
-    }
+#video_player figcaption a,
+#video_player figcaption a:hover,
+#video_player figcaption a:focus {
+  opacity: 1;
+}
 
-    .row .col.s3 {
-      padding: 0
-    }
+#video_player figcaption {
+  width: 25%;
+}
 
-    .padding-top {
-      padding-top: 18%;
-    }
+#video_player figcaption a {
+  display: block;
+}
 
-    .input-group {
-      display: table;
-    }
+.material-icons.mb-48 {
+  font-size: 48px;
+}
 
-    .input-group input,
-    .suffix {
-      display: table-cell;
-    }
+.margin-bit {
+  margin-top: 10%;
+}
 
-    .suffix {
-      width: 1.4%;
-    }
+.width_for_hr {
+  width: 50%
+}
 
-    .material-icons.mb-36 {
-      font-size: 36px
-    }
+.hidden {
+  display: none;
+}
 
-    .full_height {
-      height: 100vh;
-    }
+.big-text {
+  font-size: 40px;
+}
 
-    .padding-top-more {
-      padding-top: 20%;
-    }
+.row .col.s3 {
+  padding: 0
+}
+
+.padding-top {
+  padding-top: 5%;
+}
+
+.input-group {
+  display: table;
+}
+
+.input-group input,
+.suffix {
+  display: table-cell;
+}
+
+.suffix {
+  width: 1.4%;
+}
+
+.material-icons.mb-36 {
+  font-size: 36px
+}
+
+.material-icons.mb-64 {
+  font-size: 64px
+}
+
+.full_height {
+  height: 100vh;
+}
+
+.padding-top-more {
+  padding-top: 25%;
+}
   </style>
   <link rel="stylesheet" href="./StyleSheet/style.css">
 
@@ -67,7 +111,43 @@
   <section class="black hidden full_height padding-top-more" id="Loader">
     <center>
       <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-blue-only">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
           <div class="circle-clipper left">
             <div class="circle"></div>
           </div>
@@ -81,10 +161,66 @@
       </div>
     </center>
   </section>
-  <header id="Header">
+  <section class="" id="LandingPage">
+    <div id="Image1" class="landing-page-image hide my-carousel ">
+      <div class="Intro_Overlay"></div>
+      <div class="icon">
+        <div class="text white-text center-align">
+          <h2>Welcome to Playbook</h2>
+          <p>Your Daily Dose Of Entertainment</p>
+        </div>
+        <a href="javascript:void(0)" class="white-text LoadingPageButton">
+
+          <i class="material-icons mb-64 padding-top">
+            keyboard_arrow_down
+          </i>
+        </a>
+
+      </div>
+    </div>
+    <div id="Image2" class="landing-page-image-2 hide my-carousel">
+      <div class="Intro_Overlay"></div>
+      <div class="icon">
+
+        <div class="text white-text center-align">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Consequat et minim dolore culpa sunt nostrud fugiat adipisicing ipsum.</p>
+        </div>
+        <a href="javascript:void(0)" class="white-text LoadingPageButton">
+
+          <i class="material-icons mb-64 padding-top">
+            keyboard_arrow_down
+          </i>
+        </a>
+
+      </div>
+    </div>
+
+
+
+    <div id="Image3" class=" hide my-carousel landing-page-image-3">
+      <div class="Intro_Overlay"></div>
+      <div class="icon">
+        <div class="text white-text center-align">
+          <h2>Lorem Ipsum</h2>
+          <p>Excepteur velit proident enim commodo ullamco.</p>
+        </div>
+        <a href="javascript:void(0)" class="white-text LoadingPageButton">
+
+          <i class="material-icons mb-64 padding-top">
+            keyboard_arrow_down
+          </i>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+  <header id="Header" class="hide">
+
 
     <div class="navbar-fixed hidden" id="navigation">
-      <nav class="black  nav-extended lighten-4 z-depth-0">
+      <nav class="black lighten-4 z-depth-1 ">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo right">THE PLAYBOOK TV</a>
 
@@ -126,73 +262,13 @@
 
       </div>
 
-      <div id="artistModal" class="modal-overlay hide">
-
-        <!-- Can use &times but why to style -->
-        <a href="javascript:void(0)" class="closeBtnModal">
-          <i class="material-icons mb-48">
-            close
-          </i>
-        </a>
-
-
-        <div class="modal-overlay-content">
-          <div class="text">
-            <h2 class="white-text">By Lorem Ipsum</h2>
-          </div>
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <img src="images/yuna.jpg" alt="" class="circle">
-              <span class="title">Title</span>
-              <p>First Line
-                <br> Second Line
-              </p>
-              <a href="#!" class="secondary-content">
-                <i class="material-icons">grade</i>
-              </a>
-            </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle">folder</i>
-              <span class="title">Title</span>
-              <p>First Line
-                <br> Second Line
-              </p>
-              <a href="#!" class="secondary-content">
-                <i class="material-icons">grade</i>
-              </a>
-            </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle green">insert_chart</i>
-              <span class="title">Title</span>
-              <p>First Line
-                <br> Second Line
-              </p>
-              <a href="#!" class="secondary-content">
-                <i class="material-icons">grade</i>
-              </a>
-            </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle red">play_arrow</i>
-              <span class="title">Title</span>
-              <p>First Line
-                <br> Second Line
-              </p>
-              <a href="#!" class="secondary-content">
-                <i class="material-icons">grade</i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
     </div>
     <section id="header-video">
       <div class="parallax-container">
         <div class="parallax">
           <div class="HeadervideoContainer">
             <div class="overlay"></div>
-            <video poster="https://images.pexels.com/photos/427898/pexels-photo-427898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              autoplay muted loop>
+            <video poster="./Media/Untitled design (12).png" autoplay muted loop>
               <source src="./Media/header.mp4"> </video>
           </div>
         </div>
@@ -392,7 +468,7 @@
       </div>
     </section>
   </header>
-  <main id="Main">
+  <main id="Main" class="hide">
 
 
     <section id="aboutUs">
@@ -403,7 +479,7 @@
         </div>
         <div class="col s12 m7">
           <div class="text left-align">
-            <h2 class="black-text padding-top ">About Us</h2>
+            <h2 class="black-text center-align padding-top ">About Us</h2><hr class="width_for_hr">
             <p>Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
               aliqua. Laborum dolore pariatur in esse adipisicing reprehenderit fugiat ut labore commodo non minim. Excepteur
               minim ea Lorem ex.Veniam laborum laboris excepteur dolore mollit mollit elit nostrud ad. Dolore duis cillum
@@ -521,11 +597,81 @@
       </div>
     </section>
     <div class="section-parallax"></div>
-    <section class="">
+    <section  id="featured-videos">
+      <div class="modal  artist-modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col s12">
+              <div class="text">
+                <h2>Jerry Satpathy</h2>
+                <p>Enim est culpa exercitation do elit sint proident.</p>
+              </div>
+            </div>
+            <div class="col s6">
+              <img src="./Media/profile.png" alt="" class="responsive-img ">
+            </div>
+            <div class="col s6">
+              <div class="valign-wrapper">
+                <i class="material-icons mb-36">add</i>
+                <i class="material-icons mb-36">share</i>
+                <i class="material-icons mb-36">grade</i>
 
-      <div class="text" id="featured-videos">
 
-        <h2 class=" center-align">Featured Videos</h2>
+
+                <span class="new black badge" data-badge-caption="Followers">210</span>
+
+
+              </div>
+            </div>
+            <div class="col s12">
+              <ul class="collection">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle black">
+                    movie
+                  </i>
+                  <span class="title">Lorem</span>
+                  <p>IpsumCulpa labore anim laboris
+                    <br> aute id quis esse eiusmod enim.
+                  </p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                  </a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="material-icons circle black">
+                    movie
+                  </i>
+                  <span class="title">Lorem</span>
+                  <p>IpsumCulpa labore anim laboris
+                    <br> aute id quis esse eiusmod enim.
+                  </p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                  </a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="material-icons circle black">
+                    movie
+                  </i>
+                  <span class="title">Lorem</span>
+                  <p>IpsumCulpa labore anim laboris
+                    <br> aute id quis esse eiusmod enim.
+                  </p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer ">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+      <div class="text" >
+
+        <h2 class=" center-align padding-top">Featured Videos</h2>
         <hr class="width_for_hr">
         <p class="center-align">Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
           aliqua. </p>
@@ -534,7 +680,7 @@
         <div class="col s12 m12">
           <figure id="video_player">
             <div id="video_container">
-              <video controls id="videoPlayer" autoplay loop poster="http://thenewcode.com/assets/images/vid-glacier.jpg" playsinline>
+              <video controls id="videoPlayer" autoplay loop poster="./Media/landing_page.png" >
                 <source id="videoSource" src="./Media/Video12.mp4" type="video/mp4">
               </video>
             </div>
@@ -811,39 +957,17 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col s12 m6 hide">
-
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="./Media/Untitled design (8).png">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+     
 
       </div>
-
-
-
-
-
-
-
-
-    </section>
+</section>
+<div class="section-parallax-2"></div>
     <section>
       <div class="row">
 
         <div class="text" id="comingSoon">
-          <h2 class="left-align">Coming Soon</h2>
-          <p class="left-align">Ad ea consectetur aliquip ex cupidatat commodo.Eu aute eiusmod consectetur elit culpa consequat et nulla mollit
+          <h2 class="center-align padding-top">Coming Soon</h2><hr class="width_for_hr">
+          <p class="center-align">Ad ea consectetur aliquip ex cupidatat commodo.Eu aute eiusmod consectetur elit culpa consequat et nulla mollit
             consectetur.
           </p>
         </div>
@@ -949,11 +1073,17 @@
   </main>
 
 
-  <footer class="black" id="footer">
+  <footer class="black hide" id="footer">
     <div class="container">
       <div class="row">
         <div class="col  s12">
           <center>
+            <div class="red white-text hide" id="alertMessage" >
+              <div class="valign-wrapper">
+                  <p>Please Enter A Valid Value</p> <i class="material-icons">close</i>
+              </div>
+          
+            </div>
             <div class="text">
               <br>
               <h2 class="white-text">The Playbook</h2>
@@ -1041,7 +1171,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script src="./Scripts/script1.js"></script>
-  <script src="./Scripts/script2.js"></script>
+
 </body>
 
 </html>
