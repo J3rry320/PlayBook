@@ -10,12 +10,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Added the single rule CSS here for faster loading-->
   <style>
-    .parallax video {
-      background-coor: #000;
-    }
-
-    .parallax-container {
-      height: 700px;
+    .width_for_hr {
+      width: 50%
     }
 
     .hidden {
@@ -32,7 +28,7 @@
     }
 
     .padding-top {
-      padding-top: 10%;
+      padding-top: 18%;
     }
 
     .input-group {
@@ -46,6 +42,10 @@
 
     .suffix {
       width: 1.4%;
+    }
+
+    .material-icons.mb-36 {
+      font-size: 36px
     }
 
     .full_height {
@@ -84,81 +84,133 @@
   <header id="Header">
 
     <div class="navbar-fixed hidden" id="navigation">
-      <nav class="black lighten-4 z-depth-0">
+      <nav class="black  nav-extended lighten-4 z-depth-0">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Playbook</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down" id="Navbar">
+          <a href="#!" class="brand-logo right">THE PLAYBOOK TV</a>
+
+          <ul class="left">
             <li>
-              <a href="#header-video"> Home</a>
-            </li>
-            <li>
-              <a href="#aboutUs">About Us</a>
-            </li>
-            <li>
-              <a href="#featured-videos">Featured Videos</a>
-            </li>
-            <li>
-              <a href="#comingSoon">Coming Soon</a>
-            </li>
-            <li>
-              <a href="#footer">Subscribe</a>
+              <a>
+                <i class="material-icons mb-36" id="openNav">menu</i>
+              </a>
             </li>
           </ul>
+
+
         </div>
       </nav>
+      <div id="myNav" class="nav-overlay hide">
 
-      <ul class="sidenav" id="mobile-demo">
-        <li>
+        <!-- Can use &times but why to style -->
+        <a href="javascript:void(0)" class="closeBtnNav">
+          <i class="material-icons mb-48">
+            close
+          </i>
+        </a>
+
+
+        <div class="nav-overlay-content">
+          <h2 class="header white-text">The Playbook Tv</h2>
           <a href="#header-video"> Home</a>
-        </li>
-        <li>
+
+
           <a href="#aboutUs">About Us</a>
-        </li>
-        <li>
+
           <a href="#featured-videos">Featured Videos</a>
-        </li>
-        <li>
+
           <a href="#comingSoon">Coming Soon</a>
-        </li>
-        <li>
+
           <a href="#footer">Subscribe</a>
-        </li>
-      </ul>
-    </div>
-    <section id="header-video">
 
-      <div class="parallax-container">
-        <div class="parallax">
-          <video poster="https://images.pexels.com/photos/427898/pexels-photo-427898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            autoplay muted loop>
-            <source src="./Media/header.mp4"> </video>
-        </div>
-        <div class=" flow-text">
-          <div class="row">
-            <div class="col s12 transparent">
-              <div class="text">
-                <h2 class=" padding-top yellow-text">Playbook</h2>
-                <p class=" black-text bold-text ">Voluptate labore pariatur nulla non occaecat enim aliqua adipisicing proident. Consectetur magna id veniam
-                  .
-                </p>
-                <button class="btn btn-large black white-text" id="Category-Open-Btn">Learn More</button>
-              </div>
-
-
-
-
-
-
-            </div>
-          </div>
         </div>
 
       </div>
 
+      <div id="artistModal" class="modal-overlay hide">
 
+        <!-- Can use &times but why to style -->
+        <a href="javascript:void(0)" class="closeBtnModal">
+          <i class="material-icons mb-48">
+            close
+          </i>
+        </a>
+
+
+        <div class="modal-overlay-content">
+          <div class="text">
+            <h2 class="white-text">By Lorem Ipsum</h2>
+          </div>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <span class="title">Title</span>
+              <p>First Line
+                <br> Second Line
+              </p>
+              <a href="#!" class="secondary-content">
+                <i class="material-icons">grade</i>
+              </a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line
+                <br> Second Line
+              </p>
+              <a href="#!" class="secondary-content">
+                <i class="material-icons">grade</i>
+              </a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line
+                <br> Second Line
+              </p>
+              <a href="#!" class="secondary-content">
+                <i class="material-icons">grade</i>
+              </a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">Title</span>
+              <p>First Line
+                <br> Second Line
+              </p>
+              <a href="#!" class="secondary-content">
+                <i class="material-icons">grade</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <section id="header-video">
+      <div class="parallax-container">
+        <div class="parallax">
+          <div class="HeadervideoContainer">
+            <div class="overlay"></div>
+            <video poster="https://images.pexels.com/photos/427898/pexels-photo-427898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              autoplay muted loop>
+              <source src="./Media/header.mp4"> </video>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 transparent">
+              <div class="text left-align">
+                <h2 class=" padding-top yellow-text">Playbook</h2>
+                <p class=" white-text bold-text ">Voluptate labore pariatur nulla non occaecat enim aliqua adipisicing proident. Consectetur magna id veniam
+                  .
+                </p>
+
+                <button class="btn btn-large white black-text" id="Category-Open-Btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="black hidden" id="SectionLearnMore">
       <div class="container">
@@ -240,7 +292,8 @@
                     <span class="card-title grey-text text-darken-4">Card Title
                       <i class="material-icons right">close</i>
                     </span>
-                    <p>Cillum exercitation mollit mollit laborum sit pariatur sit commodo et laboris labore eu anim est.Incididunt voluptate nulla esse esse..</p>
+                    <p>Cillum exercitation mollit mollit laborum sit pariatur sit commodo et laboris labore eu anim est.Incididunt
+                      voluptate nulla esse esse..</p>
                   </div>
                 </div>
               </div>
@@ -261,7 +314,8 @@
                     <span class="card-title grey-text text-darken-4">Card Title
                       <i class="material-icons right">close</i>
                     </span>
-                    <p>Lorem velit laborum esse irure reprehenderit.Laborum ut duis adipisicing minim aliquip aliqua elit laborum elit aliquip..</p>
+                    <p>Lorem velit laborum esse irure reprehenderit.Laborum ut duis adipisicing minim aliquip aliqua elit laborum
+                      elit aliquip..</p>
                   </div>
                 </div>
               </div>
@@ -283,7 +337,8 @@
                     <span class="card-title grey-text text-darken-4">Card Title
                       <i class="material-icons mb-48 right">close</i>
                     </span>
-                    <p>Occaecat culpa est quis veniam est deserunt fugiat reprehenderit.Proident mollit exercitation aute elit officia irure amet nisi voluptate et ipsum..</p>
+                    <p>Occaecat culpa est quis veniam est deserunt fugiat reprehenderit.Proident mollit exercitation aute elit
+                      officia irure amet nisi voluptate et ipsum..</p>
                   </div>
                 </div>
               </div>
@@ -304,7 +359,8 @@
                     <span class="card-title grey-text text-darken-4">Card Title
                       <i class="material-icons right">close</i>
                     </span>
-                    <p>Laborum consequat reprehenderit mollit nisi enim.Ut anim duis eiusmod commodo nostrud aliqua ullamco deserunt eu cupidatat..</p>
+                    <p>Laborum consequat reprehenderit mollit nisi enim.Ut anim duis eiusmod commodo nostrud aliqua ullamco
+                      deserunt eu cupidatat..</p>
                   </div>
                 </div>
               </div>
@@ -313,92 +369,111 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="social-icon-bar hide" id="socialIcons">
+        <a href="#!">
+          <i class="material-icons white-text mb-36" id="closeSocialIcons">close</i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </section>
   </header>
   <main id="Main">
 
 
-    <section>
+    <section id="aboutUs">
 
-      <div class="first-bg">
+      <div class="row">
+        <div class="col s12 m5">
+          <img class="responsive-img padding-top " src="./Media/about.jpg">
+        </div>
+        <div class="col s12 m7">
+          <div class="text left-align">
+            <h2 class="black-text padding-top ">About Us</h2>
+            <p>Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
+              aliqua. Laborum dolore pariatur in esse adipisicing reprehenderit fugiat ut labore commodo non minim. Excepteur
+              minim ea Lorem ex.Veniam laborum laboris excepteur dolore mollit mollit elit nostrud ad. Dolore duis cillum
+              sint ullamco cupidatat tempor dolor proident reprehenderit eiusmod voluptate veniam nulla. Laborum excepteur
+              esse nulla reprehenderit eiusmod amet velit. Occaecat qui ullamco sit pariatur ipsum sint irure sunt occaecat
+              mollit ea. </p>
+          </div>
+        </div>
+        <div class="col m4 s12">
+          <div class="card">
+            <center>
 
-      </div>
-      <div class="text" id="aboutUs">
-        <h2>About Us</h2>
-        <p>Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
-          aliqua. Laborum dolore pariatur in esse adipisicing reprehenderit fugiat ut labore commodo non minim. Excepteur
-          minim ea Lorem ex.</p>
-      </div>
+              <i class="material-icons margin-bit mb-48">
+                mood
+              </i>
 
-      <div class="">
-        <div class="row">
-          <div class="col m4 s12">
-            <div class="card">
-              <center>
-
-                <i class="material-icons margin-bit mb-48">
-                  mood
-                </i>
-
-              </center>
-              <div class="card-content">
-                <h4 class="black-text">
-                  Lorem Ipsum
-                </h4>
-                <p class="left-align"> Exercitation elit culpa aute occaecat sit dolore.Sunt nostrud magna nostrud ut duis esse incididunt officia
-                  deserunt cillum consectetur dolore anim.</p>
-              </div>
-              <div class="card-action ">
-                <a href="#modal3" class="modal-trigger black-text">Learn More</a>
-              </div>
+            </center>
+            <div class="card-content">
+              <h4 class="black-text">
+                Lorem Ipsum
+              </h4>
+              <p class="left-align"> Exercitation elit culpa aute occaecat sit dolore.Sunt nostrud magna nostrud ut duis esse incididunt officia
+                deserunt cillum consectetur dolore anim.</p>
+            </div>
+            <div class="card-action ">
+              <a href="#modal3" class="modal-trigger black-text">Learn More</a>
             </div>
           </div>
-          <div class="col m4 s12">
-            <div class="card">
-              <center>
+        </div>
+        <div class="col m4 s12">
+          <div class="card">
+            <center>
 
-                <i class="material-icons margin-bit mb-48">
-                  location_city
-                </i>
+              <i class="material-icons margin-bit mb-48">
+                location_city
+              </i>
 
-              </center>
-              <div class="card-content">
-                <h4 class="black-text">
-                  Lorem Ipsum
-                </h4>
-                <p class="left-align"> Cupidatat sit exercitation commodo veniam laboris officia ullamco do.Laborum proident ipsum ut voluptate
-                  cupidatat magna voluptate cillum.</p>
-              </div>
-              <div class="card-action ">
-                <a href="#modal2" class="modal-trigger black-text">Learn More</a>
-              </div>
+            </center>
+            <div class="card-content">
+              <h4 class="black-text">
+                Lorem Ipsum
+              </h4>
+              <p class="left-align"> Cupidatat sit exercitation commodo veniam laboris officia ullamco do.Laborum proident ipsum ut voluptate cupidatat
+                magna voluptate cillum.</p>
+            </div>
+            <div class="card-action ">
+              <a href="#modal2" class="modal-trigger black-text">Learn More</a>
             </div>
           </div>
-          <div class="col m4 s12">
-            <div class="card">
-              <center>
+        </div>
+        <div class="col m4 s12">
+          <div class="card">
+            <center>
 
-                <i class="material-icons margin-bit mb-48">
-                  face
-                </i>
+              <i class="material-icons margin-bit mb-48">
+                face
+              </i>
 
-              </center>
-              <div class="card-content">
-                <h4 class="black-text">
-                  Lorem Ipsum
-                </h4>
-                <p class="left-align">Lorem Ipsum Das Nenu Eu ut non et consectetur dolor laborum velit.Nostrud nostrud labore consequat laborum
-                  non nulla pariatur ipsum dolor nostrud velit.</p>
-              </div>
-              <div class="card-action ">
-                <a href="#modal1" class="modal-trigger black-text">Learn More</a>
-              </div>
+            </center>
+            <div class="card-content">
+              <h4 class="black-text">
+                Lorem Ipsum
+              </h4>
+              <p class="left-align">Lorem Ipsum Das Nenu Eu ut non et consectetur dolor laborum velit.Nostrud nostrud labore consequat laborum
+                non nulla pariatur ipsum dolor nostrud velit.</p>
+            </div>
+            <div class="card-action ">
+              <a href="#modal1" class="modal-trigger black-text">Learn More</a>
             </div>
           </div>
-
-
-
-
-
         </div>
         <div id="modal2" class="modal bottom-sheet modal-fixed-footer">
           <div class="modal-content">
@@ -442,17 +517,20 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
           </div>
         </div>
-    </section>
 
-    <section>
-      <div class="second-bg"></div>
+      </div>
+    </section>
+    <div class="section-parallax"></div>
+    <section class="">
+
       <div class="text" id="featured-videos">
-        <h2 class="right-align">Featured Videos</h2>
-        <p class="right-align">Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
+
+        <h2 class=" center-align">Featured Videos</h2>
+        <hr class="width_for_hr">
+        <p class="center-align">Minim in duis laboris et incididunt labore. Sit cillum veniam et culpa aute consequat. Elit elit labore consectetur
           aliqua. </p>
       </div>
       <div class="row">
-
         <div class="col s12 m12">
           <figure id="video_player">
             <div id="video_container">
@@ -482,195 +560,279 @@
 
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <div class="text">
-              <h2 class="center-align">Some of our featured collections</h2>
-            </div>
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/1168742/pexels-photo-1168742.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                class="responsive-img">
-              <div class="overlay">
-                <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
-                  <i id="./Media/Video13.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-              </div>
-              <figcaption>
-
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text like-counter">
-                    <i class="material-icons like-button" id="like-counter6">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-6">234</p>
-                </div>
-
-
-              </figcaption>
-            </figure>
-
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/163379/ballet-sneaker-dress-ballet-dancer-163379.jpeg?auto=compress&cs=tinysrgb&h=350"
-                alt="Avatar" class="responsive-img">
-              <div class="overlay">
-                <a href="#!" class="icon NewVideo scrollSome" title="User Profile">
-                  <i id="./Media/Video5.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-              </div>
-              <figcaption>
-
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text like-counter">
-                    <i class="material-icons like-button" id="like-counter5">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-5">4354</p>
-                </div>
-
-
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                class="responsive-img">
-              <div class="overlay">
-                <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
-                  <i id="./Media/Video4.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-              </div>
-              <figcaption>
-
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text like-counter">
-                    <i class="material-icons like-button" id="like-counter4">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-4">4142</p>
-                </div>
-
-
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/784707/pexels-photo-784707.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                class="responsive-img">
-              <div class="overlay">
-                <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
-                  <i id="./Media/Video11.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-              </div>
-              <figcaption>
-
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text like-counter">
-                    <i class="material-icons like-button" id="like-counter3">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-3">9192</p>
-                </div>
-
-
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/852793/pexels-photo-852793.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                class="responsive-img">
-              <div class="overlay">
-                <a href="#!" class="icon scrollSome NewVideo" title="User Profile">
-                  <i id="./Media/Video2.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-
-              </div>
-              <figcaption>
-
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text scrollSome like-counter">
-                    <i class="material-icons like-button" id="like-counter2">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-2">1222</p>
-                </div>
-
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col m4 s12">
-            <figure class="my-container hoverable white">
-              <img src="https://images.pexels.com/photos/264258/pexels-photo-264258.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                class="responsive-img">
-              <div class="overlay">
-                <a class="icon scrollSome NewVideo" title="User Profile">
-                  <i id="./Media/Video8.mp4" class="material-icons mb-48">
-                    play_circle_filled
-                  </i>
-                </a>
-              </div>
-              <figcaption>
-                <div class="valign-wrapper right">
-                  <h5 class="left-align">
-                    Heart Warming Dance
-                  </h5>
-                  <a href="#!" class="black-text like-counter">
-                    <i class="material-icons  like-button-1" id="like-counter1">
-                      favorite_border
-                    </i>
-
-                  </a>
-                  <p id="counter-1">129</p>
-                </div>
-
-
-              </figcaption>
-            </figure>
+      <ul class="collection hide" id="artist_collection">
+        <li class="collection-item avatar">
+          <img src="images/yuna.jpg" alt="" class="circle">
+          <span class="title">Title</span>
+          <p>First Line
+            <br> Second Line
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">grade</i>
+          </a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col s12">
+          <div class="text">
+            <h2 class="center-align ">For You</h2>
+            <hr class="width_for_hr">
           </div>
         </div>
+        <div class="col s12 m6">
+          <figure class="my-container hoverable white">
+            <img class=" responsive-img" src="./Media/Untitled design (8).png">
+            <div class="overlay">
+              <a href="#!" class="icon  NewVideo" title="User Profile">
+                <i id="./Media/Video13.mp4" class="play scrollSome material-icons mb-48">
+                  play_circle_filled
+                </i>
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Laboris excepteur aliqua </h5>
+              </div>
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter6">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-6">234</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+
+        </div>
+        <div class="col s12 m6">
+          <figure class="my-container hoverable white">
+            <img src="./Media/Untitled design (9).png" alt="Avatar" class="responsive-img">
+            <div class="overlay">
+              <a href="#!" class="icon NewVideo " title="User Profile">
+                <i id="./Media/Video5.mp4" class="scrollSome play material-icons mb-48">
+                  play_circle_filled
+                </i>
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Ullamco nostrud quis sit
+                </h5>
+              </div>
+
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter5">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-5">4354</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+
+        </div>
+        <div class="col  m6 s12">
+          <figure class="my-container hoverable white">
+            <img src="./Media/Untitled design (13).png" alt="Avatar" class="responsive-img">
+            <div class="overlay">
+              <a href="#!" class="icon NewVideo " title="User Profile">
+                <i id="./Media/Video5.mp4" class="scrollSome play material-icons mb-48">
+                  play_circle_filled
+                </i>
+
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Irure incididunt proident
+                </h5>
+              </div>
+
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter4">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-4">4354</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col  s12 m6">
+          <figure class="my-container hoverable white">
+            <img src="./Media/Untitled design (10).png" alt="Avatar" class="responsive-img">
+            <div class="overlay">
+              <a href="#!" class="icon NewVideo " title="User Profile">
+                <i id="./Media/Video5.mp4" class="play scrollSome material-icons mb-48">
+                  play_circle_filled
+                </i>
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Do commodo incididunt
+                </h5>
+              </div>
+
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter3">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-3">4354</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+        </div>
+
+
+
+        <div class="col  s12 m6">
+          <figure class="my-container hoverable white">
+            <img src="./Media/Untitled design (11).png" alt="Avatar" class="responsive-img">
+            <div class="overlay">
+              <a href="#!" class="icon NewVideo " title="User Profile">
+                <i id="./Media/Video5.mp4" class="scrollSome play material-icons mb-48">
+                  play_circle_filled
+                </i>
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Id esse duis culpa
+                </h5>
+              </div>
+
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter2">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-2">154</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col s12 m6">
+          <figure class="my-container hoverable white">
+            <img src="./Media/Untitled design (12).png" alt="Avatar" class="responsive-img">
+            <div class="overlay">
+              <a href="#!" class="icon NewVideo " title="User Profile">
+                <i id="./Media/Video5.mp4" class="scrollSome play material-icons mb-48">
+                  play_circle_filled
+                </i>
+                <i class="material-icons mb-48 artist-identy">
+                  face
+                </i>
+                <i class="material-icons mb-48 share-icon">
+                  share
+                </i>
+              </a>
+            </div>
+            <figcaption>
+              <div class="valign-wrapper left">
+                <h5 class="left-align">
+                  Non velit quis sint
+                </h5>
+              </div>
+
+              <div class="valign-wrapper right">
+
+                <a href="#!" class="black-text like-counter">
+                  <i class="material-icons like-button" id="like-counter1">
+                    favorite_border
+                  </i>
+
+                </a>
+                <p id="counter-1">4354</p>
+              </div>
+
+
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col s12 m6 hide">
+
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="./Media/Untitled design (8).png">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
+
+
 
 
 
@@ -678,7 +840,7 @@
     </section>
     <section>
       <div class="row">
-        <div class="third-bg"></div>
+
         <div class="text" id="comingSoon">
           <h2 class="left-align">Coming Soon</h2>
           <p class="left-align">Ad ea consectetur aliquip ex cupidatat commodo.Eu aute eiusmod consectetur elit culpa consequat et nulla mollit
@@ -688,7 +850,8 @@
         <div class="col m6 s12">
           <div class="card  ">
             <div class="card-image">
-              <img src="https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" class="responsive-img">
+              <img src="https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="" srcset="" class="responsive-img">
 
 
             </div>
@@ -756,19 +919,27 @@
               </div>
             </div>
             <div class="col m6 s12">
-              <div class="card  ">
-                <div class="card-image">
-                  <img src="./Media/image1.png" alt="" srcset="" class="responsive-img">
-
-
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./Media/image1.png">
                 </div>
                 <div class="card-content">
-                  <h4 class="black-text">
+                  <span class="card-title activator grey-text text-darken-4">
                     Lorem Ipsum
-                  </h4>
-                  <p>Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit.</p>
-                </div>
 
+                    <i class="material-icons right">more_vert</i>
+                  </span>
+                  <p>
+                    Non occaecat sint occaecat aute eu non cupidatat.Aliqua cillum in incididunt sit
+
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title
+                    <i class="material-icons right">close</i>
+                  </span>
+                  <p>Id in id elit consequat et.Nisi reprehenderit velit aliqua proident sunt in eu enim ad deserunt..</p>
+                </div>
               </div>
             </div>
           </div>
@@ -866,8 +1037,8 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script src="./Scripts/script1.js"></script>
   <script src="./Scripts/script2.js"></script>

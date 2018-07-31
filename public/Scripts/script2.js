@@ -9,15 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   firebase.initializeApp(config);
 
-  var instances = M.Sidenav.init(document.querySelectorAll('.sidenav'), {
-inDuration:200,
-outDuration:150
-  });
-
-    var Modalinstances = M.Modal.init(document.querySelectorAll('.modal'), {
+  var Modalinstances = M.Modal.init(document.querySelectorAll('.modal'), {
 
     });
-   
+    console.log(Modalinstances)
+  
 });
 
 
